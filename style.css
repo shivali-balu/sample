@@ -1,38 +1,47 @@
-#calculator {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.simpleLogin form {
+    max-width: 400px;
+    margin: auto;
+    background:#fefefd;
+    box-shadow: 0 10px 10px #222;
   }
-   
-  /* Style the calculator buttons */
-  #calculator button {
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    cursor: pointer;
+  .simpleLogin form fieldset {
+      border: 0 none;
+      margin: 0;
+      padding: 20px;
   }
-   
-  /* Add styles for the operator buttons */
-  #calculator .operator {
-    background-color: #f0ad4e;
-    color: #fff;
+  .simpleLogin form legend,
+  .simpleLogin form fieldset input {
+    font-family: Open Sans;
+    font-size:15px;
   }
-   
-  /* Add styles for the equal button */
-  #calculator .equal {
-    background-color: #5cb85c;
-    color: #fff;
+  .simpleLogin form legend {
+      background-color: #8fc400;
+      border-top: 0 none;
+      color: white;
+      display: table-cell;
+      padding: 10px 20px;
+      width: auto;
   }
-   
-  /* Add styles for the clear button */
-  #calculator .clear {
-    background-color: #d9534f;
-    color: #fff;
+  .simpleLogin form fieldset input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px 5%;
+    border: thin #8fc400 solid;
   }
+  .simpleLogin input[type="submit"] {
+    width: 100px;
+    float: right;
+    background: #8fc400;
+    color: white;
+    transition: .2s;
+    border: 0;
+    cursor:pointer;
+  }
+  .simpleLogin input[type="submit"]:focus,
+  .simpleLogin input[type="submit"]:hover, 
+  .simpleLogin input[type="submit"]:active {
+    padding: 10px 5%;
+    background:#B3E226;
+    outline: none;
+  }
+  
